@@ -4,252 +4,133 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./public/favicon.ico" />
-    <title>Basic App Template</title>
+    <title>Protein Cost Calculator</title>
     <link rel="stylesheet" href="output.css" />
   </head>
   <body class="font-custom flex flex-col min-h-screen">
     <nav>
-      <div class="container mx-auto flex justify-between items-center p-4">
+      <div
+        class="container mx-auto flex justify-center md:justify-start items-center px-8 md:px-4 py-8"
+      >
         <div>
-          <a href="/src/index.html" class="text-xl font-bold">Basic App template</a>
+          <a href="/src/index.html" class="hidden md:flex text-xl font-extrabold tracking-tight"
+            >Protein Cost Calculator</a
+          >
         </div>
+        <!-- Add a mobile icon -->
         <div>
+          <img
+            src="./public/protein-cost-calculator-logo.png"
+            alt="Protein Cost Calculator"
+            class="w-12 rounded-md md:hidden"
+          />
+        </div>
+
+        <!-- <div>
           <ul class="flex space-x-4">
             <li>
               <a href="#" class="text-gray-500">Link</a>
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </nav>
     <!-- Hero Section -->
-    <main class="container py-16 max-w-5xl mx-auto">
-      <div class="text-center pb-24">
-        <h1 class="text-5xl md:text-8xl font-black tracking-tight mb-6">
-          A compelling hook goes here
+    <main class="container max-w-4xl mx-auto py-8 md:py-16">
+      <div class="text-center pb-6">
+        <h1 class="text-5xl font-black tracking-tight mb-6">
+          How much are you really spending to fuel your body?
         </h1>
-        <p class="text-lg mb-10">
-          Add a really engaging sub-headline here that makes them want to read more.
-        </p>
-        <button
-          class="transition ease-in-out delay-150 hover:-translate-y-1 font-bold text-white bg-purple-600 rounded-lg hover:bg-purple-700 hover:shadow-lg px-6 py-3 mb-12 text-lg"
-        >
-          Action CTA goes here
-        </button>
-        <p class="text-lg">
-          This is where you can add some social proof, like "Join 1,000+ agents who trust us to fill
-          their pipelines."
+        <p class="text-lg max-w-2xl mx-auto mb-10">
+          Whether it’s for muscle building, recovery, or staying on top of your nutrition goals, the
+          Protein Cost Calculator helps you break down your cost per serving. Just enter the total
+          cost and servings to see if your protein works as hard as you do.
         </p>
       </div>
-
-      <!-- Pain Points Section -->
-      <section class="md:py-16">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="md:pt-16 order-last md:order-none">
-            <h2 class="text-4xl font-bold tracking-tight mb-6">
-              Problem or pain-point headline goes here
-            </h2>
-            <ul class="space-y-4 text-lg">
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                Riding the feast-or-famine lead rollercoaster
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                Hoping referrals keep coming
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                Paying ridiculous fees to Zillow
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                Spending hours on social media with no results
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                Wasting money on ads that don't convert
-              </li>
-            </ul>
-          </div>
-          <div class="flex justify-center order-first md:order-none">
-            <img src="./public/purple-unicorn-waving.png" alt="Purple Image" />
-          </div>
-        </div>
-      </section>
-
-      <!-- Solution Section -->
-      <section class="py-16">
-        <div class="text-center">
-          <h2 class="text-4xl font-bold tracking-tight mb-6">Solution headline goes here</h2>
-          <div>
-            <p class="text-lg mb-6">
-              A short paragraph that explains how your service solves their problem.
-            </p>
-            <ul class="grid grid-cols-1 md:grid-cols-4 text-lg mb-10 gap-6">
-              <li
-                class="transition ease-in-out delay-150 hover:-translate-y-1 hover:shadow-md bg-white p-8 border border-gray-300 rounded-lg"
-              >
-                Benefit goes here
-              </li>
-              <li
-                class="transition ease-in-out delay-150 hover:-translate-y-1 hover:shadow-md bg-white p-8 border border-gray-300 rounded-lg"
-              >
-                Benefit goes here
-              </li>
-              <li
-                class="transition ease-in-out delay-150 hover:-translate-y-1 hover:shadow-md bg-white p-8 border border-gray-300 rounded-lg"
-              >
-                Benefit goes here
-              </li>
-              <li
-                class="transition ease-in-out delay-150 hover:-translate-y-1 hover:shadow-md bg-white p-8 border border-gray-300 rounded-lg"
-              >
-                Benefit goes here
-              </li>
-            </ul>
-            <button
-              class="transition ease-in-out delay-150 hover:-translate-y-1 font-bold text-white bg-purple-600 rounded-lg hover:bg-purple-700 hover:shadow-lg px-6 py-3 mb-12 text-lg"
-            >
-              Action CTA goes here
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <!-- Social Proof Section -->
-      <section class="py-16">
-        <div class="text-center max-w-2xl mx-auto">
-          <h2 class="text-4xl font-bold tracking-tight mb-6">Client testimonial or social proof</h2>
-          <div
-            class="transition ease-in-out delay-150 hover:-translate-y-1 bg-gray-100 rounded-lg hover:shadow-lg p-8"
-          >
-            <p class="mb-4">
-              Add a testimonial here that highlights the main benefit or outcome customers receive.
-              For example: "Every month I wondered where my next deal would come from. Now I have a
-              steady stream of leads and I can focus on closing deals."
-            </p>
-            <p class="font-medium">- Ronda Realtor</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- How It Works Section -->
-      <section class="py-16">
-        <div>
-          <h2 class="text-4xl text-center font-bold tracking-tight mb-8">
-            If your service has steps, add them here
-          </h2>
-          <div class="max-w-3xl mx-auto space-y-12">
-            <div class="flex gap-4">
-              <div
-                class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-purple-100 text-purple-600 font-bold"
-              >
-                1
-              </div>
-              <div>
-                <h3 class="mb-2 text-xl font-bold">First step in the process</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, ratione nihil
-                  accusantium laudantium consectetur quos itaque.
-                </p>
-              </div>
+      <div class="max-w-2xl mx-auto border border-gray-300 rounded-lg shadow-xl p-8">
+        <form id="proteinForm" onsubmit="validateForm(event)">
+          <h2 class="mb-8 text-2xl font-bold tracking-tight">Enter your protein details</h2>
+          <div class="space-y-4">
+            <div class="space-y-2">
+              <label class="block text-sm font-medium">Product Name</label>
+              <input type="text" id="name" class="input input-bordered w-full" required />
             </div>
-            <div class="flex gap-4">
-              <div
-                class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-purple-100 text-purple-600 font-bold"
-              >
-                2
-              </div>
-              <div>
-                <h3 class="mb-2 text-xl font-bold">Next step in the process</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto labore
-                  ratione qui quaerat necessitatibus nemo eius.
-                </p>
-              </div>
+
+            <div class="space-y-2">
+              <label class="block text-sm font-medium">Total Cost ($)</label>
+              <input
+                type="number"
+                step="0.01"
+                id="totalCost"
+                class="input input-bordered w-full"
+                required
+              />
             </div>
-            <div class="flex gap-4">
-              <div
-                class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-purple-100 text-purple-600 font-bold"
-              >
-                3
-              </div>
-              <div>
-                <h3 class="mb-2 text-xl font-bold">Last step in the process</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi id non molestias
-                  repellat rem laborum laudantium.
-                </p>
-              </div>
+
+            <div class="space-y-2">
+              <label class="block text-sm font-medium">Total Servings</label>
+              <input
+                type="number"
+                id="totalServings"
+                class="input input-bordered w-full"
+                required
+              />
+            </div>
+
+            <div class="space-y-2">
+              <label class="block text-sm font-medium">Protein Per Serving (g)</label>
+              <input
+                type="number"
+                id="proteinPerServing"
+                class="input input-bordered w-full"
+                required
+              />
+            </div>
+
+            <div class="space-y-2">
+              <label class="block text-sm font-medium">Required Protein (g)</label>
+              <input
+                type="number"
+                id="requiredProtein"
+                class="input input-bordered w-full"
+                required
+              />
             </div>
           </div>
-<<<<<<< HEAD
-          <button type="submit" class="btn btn-accent w-full mt-8">Calculate</button>
-        </form>
-        <div id="results" class="mt-16"></div>
-      </div>
-=======
-        </div>
-      </section>
 
-      <!-- Pricing Section -->
-      <section class="py-16">
-        <div>
-          <h2 class="text-4xl text-center font-bold tracking-tight mb-6">
-            Pricing section goes here
-          </h2>
-          <p class="text-center mb-6">Compelling sub-text goes here.</p>
-          <div
-            class="transition ease-in-out delay-150 hover:-translate-y-1 hover:shadow-lg text-white max-w-2xl mx-auto p-8 bg-purple-600 rounded-lg shadow-sm"
-          >
-            <h3 class="mb-6 text-4xl font-bold">$2,000/mo</h3>
-            <p class="mb-6 text-lg font-medium">List the features:</p>
-            <ul class="space-y-4 mb-6">
-              <li class="flex items-start">Cool feature #1</li>
-              <li class="flex items-start">Cool feature #2</li>
-              <li class="flex items-start">Cool feature #3</li>
-            </ul>
-            <div class="text-center">
-              <button
-                class="transition ease-in-out delay-150 hover:-translate-y-1 font-bold text-purple-600 bg-white rounded-lg hover:shadow-lg px-6 py-3 mb-6 text-lg"
-              >
-                Action CTA goes here
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Final CTA Section -->
-      <section class="px-4 py-20">
-        <div class="max-w-4xl mx-auto text-center">
-          <h2 class="text-4xl text-center font-bold tracking-tight mb-6">
-            Ready for a steady stream of leads?
-          </h2>
           <button
-            class="transition ease-in-out delay-150 hover:-translate-y-1 font-bold text-white bg-purple-600 rounded-lg hover:bg-purple-700 hover:shadow-lg px-6 py-3 mb-12 text-lg"
+            onclick="calculateAndDisplay()"
+            type="submit"
+            class="w-full transition ease-in-out delay-150 hover:-translate-y-1 font-bold text-white bg-black rounded-lg hover:shadow-lg px-6 py-3 mt-8 text-lg"
           >
-            Action CTA goes here
+            Calculate
           </button>
-        </div>
-      </section>
->>>>>>> d6870b71a9abede9a3e2a906a921712379d2455e
+        </form>
+      </div>
     </main>
-    <footer class="bg-neutral text-base-300 text-center py-4">
+    <footer class="bg-black text-white text-center py-6">
       <div class="container mx-auto">
-        <p>&copy; 2025 Basic App Template</p>
+        <p>
+          &copy; 2025 Protein Cost Calculator | Made by
+          <span class="font-bold">
+            <a
+              href="https://coreymccoy.com"
+              target="_blank"
+              class="hover:underline underline-offset-4 decoration-[#ACF72D] decoration-2 transition ease-in-out duration-300"
+              >Corey McCoy</a
+            >
+          </span>
+        </p>
       </div>
     </footer>
-<<<<<<< HEAD
 
-    <script src="calculate.js"></script>
+    <script src="./calculate.js"></script>
 
     <div
       id="modalBackdrop"
       class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50"
     >
-      <div id="modal" class="bg-white rounded-xl shadow-lg p-6 max-w-md w-full mx-4 relative">
+      <div id="modal" class="bg-white rounded-xl shadow-lg p-6 max-w-lg w-full mx-4 relative">
         <button id="closeModal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
@@ -260,10 +141,8 @@
             />
           </svg>
         </button>
-        <div id="modalContent"></div>
+        <div id="modalContent" class="space-y-4"></div>
       </div>
     </div>
-=======
->>>>>>> d6870b71a9abede9a3e2a906a921712379d2455e
   </body>
 </html>

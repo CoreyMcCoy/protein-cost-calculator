@@ -23,7 +23,6 @@ function calculateAndDisplay() {
   const proteinPerServing = document.getElementById('proteinPerServing').value.trim();
   const requiredProtein = document.getElementById('requiredProtein').value.trim();
 
-  // const resultsDiv = document.getElementById('results');
   const resultsDiv = document.getElementById('modalContent');
 
   // Check if all fields are filled
@@ -70,15 +69,15 @@ function calculateAndDisplay() {
   );
 
   resultsDiv.innerHTML = `
-          <h2 class="text-xl font-bold mb-2">Results for ${result.name}:</h2>
+          <h2 class="text-xl font-bold mb-6">Results for ${result.name}:</h2>
           <p>Cost per gram of protein: $${result.costPerGramProtein}</p>
           <p>Cost per serving: $${result.costPerServing}</p>
           <p>Protein per serving: ${result.proteinPerServing}g</p>
           <p>Servings needed for ${requiredProtein}g of protein: ${result.servingsForRequiredProtein}</p>
           <p>Cost for ${requiredProtein}g of protein: $${result.costForRequiredProtein}</p>
-          <div class="mt-4 bg-blue-100 p-4 rounded-md">
-              <p class="font-medium">Duration Analysis:</p>
-              <p>This container will provide ${result.daysSupply} servings of ${requiredProtein}g protein</p>
+          <div class="mt-4 bg-gray-200 p-4 rounded-md">
+              <p class="font-medium">How long will it last?</p>
+              <p>This container will provide ${result.daysSupply} servings at ${requiredProtein}g a serving</p>
           </div>
       `;
   showModal();
